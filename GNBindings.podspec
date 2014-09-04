@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   					Programatically create bindings between multiple objects/keys.
                    DESC
   s.homepage     = "https://github.com/jakubknejzlik/GNBindings"
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   s.author             = { "Jakub Knejzlik" => "jakub.knejzlik@gmail.com" }
   s.platform     = :ios, "6.0"
   s.source       = { :git => "https://github.com/jakubknejzlik/GNBindings.git", :tag => "0.0.2" }

@@ -9,8 +9,6 @@
 #import "GNBindings.h"
 #import "GNBinding.h"
 
-#import <CWLSynthesizeSingleton.h>
-
 @interface GNBindings ()
 @end
 

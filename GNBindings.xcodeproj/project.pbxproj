@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE5D0DA219B8BAB300929A0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D0DA119B8BAB300929A0B /* Foundation.framework */; };
+		EE5D0DA719B8BAB300929A0B /* GNBindings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE5D0DA619B8BAB300929A0B /* GNBindings.h */; };
+		EE5D0DA919B8BAB300929A0B /* GNBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D0DA819B8BAB300929A0B /* GNBindings.m */; };
+		EE5D0DB019B8BAB300929A0B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D0DAF19B8BAB300929A0B /* XCTest.framework */; };
+		EE5D0DB119B8BAB300929A0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D0DA119B8BAB300929A0B /* Foundation.framework */; };
+		EE5D0DB319B8BAB300929A0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D0DB219B8BAB300929A0B /* UIKit.framework */; };
+		EE5D0DB619B8BAB300929A0B /* libGNBindings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D0D9E19B8BAB300929A0B /* libGNBindings.a */; };
+		EE5D0DBC19B8BAB300929A0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE5D0DBA19B8BAB300929A0B /* InfoPlist.strings */; };
+		EE5D0DBE19B8BAB300929A0B /* GNBindingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D0DBD19B8BAB300929A0B /* GNBindingsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE5D0DB419B8BAB300929A0B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE5D0D9619B8BAB300929A0B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE5D0D9D19B8BAB300929A0B;
+			remoteInfo = GNBindings;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE5D0D9C19B8BAB300929A0B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				EE5D0DA719B8BAB300929A0B /* GNBindings.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EE5D0D9E19B8BAB300929A0B /* libGNBindings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGNBindings.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5D0DA119B8BAB300929A0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE5D0DA519B8BAB300929A0B /* GNBindings-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNBindings-Prefix.pch"; sourceTree = "<group>"; };
+		EE5D0DA619B8BAB300929A0B /* GNBindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNBindings.h; sourceTree = "<group>"; };
+		EE5D0DA819B8BAB300929A0B /* GNBindings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNBindings.m; sourceTree = "<group>"; };
+		EE5D0DAE19B8BAB300929A0B /* GNBindingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNBindingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5D0DAF19B8BAB300929A0B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EE5D0DB219B8BAB300929A0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		EE5D0DB919B8BAB300929A0B /* GNBindingsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GNBindingsTests-Info.plist"; sourceTree = "<group>"; };
+		EE5D0DBB19B8BAB300929A0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EE5D0DBD19B8BAB300929A0B /* GNBindingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNBindingsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE5D0D9B19B8BAB300929A0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5D0DA219B8BAB300929A0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE5D0DAB19B8BAB300929A0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5D0DB619B8BAB300929A0B /* libGNBindings.a in Frameworks */,
+				EE5D0DB019B8BAB300929A0B /* XCTest.framework in Frameworks */,
+				EE5D0DB319B8BAB300929A0B /* UIKit.framework in Frameworks */,
+				EE5D0DB119B8BAB300929A0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE5D0D9519B8BAB300929A0B = {
+			isa = PBXGroup;
+			children = (
+				EE5D0DA319B8BAB300929A0B /* GNBindings */,
+				EE5D0DB719B8BAB300929A0B /* GNBindingsTests */,
+				EE5D0DA019B8BAB300929A0B /* Frameworks */,
+				EE5D0D9F19B8BAB300929A0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE5D0D9F19B8BAB300929A0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D0D9E19B8BAB300929A0B /* libGNBindings.a */,
+				EE5D0DAE19B8BAB300929A0B /* GNBindingsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE5D0DA019B8BAB300929A0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D0DA119B8BAB300929A0B /* Foundation.framework */,
+				EE5D0DAF19B8BAB300929A0B /* XCTest.framework */,
+				EE5D0DB219B8BAB300929A0B /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE5D0DA319B8BAB300929A0B /* GNBindings */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D0DA619B8BAB300929A0B /* GNBindings.h */,
+				EE5D0DA819B8BAB300929A0B /* GNBindings.m */,
+				EE5D0DA419B8BAB300929A0B /* Supporting Files */,
+			);
+			path = GNBindings;
+			sourceTree = "<group>";
+		};
+		EE5D0DA419B8BAB300929A0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D0DA519B8BAB300929A0B /* GNBindings-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE5D0DB719B8BAB300929A0B /* GNBindingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D0DBD19B8BAB300929A0B /* GNBindingsTests.m */,
+				EE5D0DB819B8BAB300929A0B /* Supporting Files */,
+			);
+			path = GNBindingsTests;
+			sourceTree = "<group>";
+		};
+		EE5D0DB819B8BAB300929A0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D0DB919B8BAB300929A0B /* GNBindingsTests-Info.plist */,
+				EE5D0DBA19B8BAB300929A0B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE5D0D9D19B8BAB300929A0B /* GNBindings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE5D0DC119B8BAB300929A0B /* Build configuration list for PBXNativeTarget "GNBindings" */;
+			buildPhases = (
+				EE5D0D9A19B8BAB300929A0B /* Sources */,
+				EE5D0D9B19B8BAB300929A0B /* Frameworks */,
+				EE5D0D9C19B8BAB300929A0B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GNBindings;
+			productName = GNBindings;
+			productReference = EE5D0D9E19B8BAB300929A0B /* libGNBindings.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EE5D0DAD19B8BAB300929A0B /* GNBindingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE5D0DC419B8BAB300929A0B /* Build configuration list for PBXNativeTarget "GNBindingsTests" */;
+			buildPhases = (
+				EE5D0DAA19B8BAB300929A0B /* Sources */,
+				EE5D0DAB19B8BAB300929A0B /* Frameworks */,
+				EE5D0DAC19B8BAB300929A0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE5D0DB519B8BAB300929A0B /* PBXTargetDependency */,
+			);
+			name = GNBindingsTests;
+			productName = GNBindingsTests;
+			productReference = EE5D0DAE19B8BAB300929A0B /* GNBindingsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE5D0D9619B8BAB300929A0B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jakub Knejzlik";
+			};
+			buildConfigurationList = EE5D0D9919B8BAB300929A0B /* Build configuration list for PBXProject "GNBindings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE5D0D9519B8BAB300929A0B;
+			productRefGroup = EE5D0D9F19B8BAB300929A0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE5D0D9D19B8BAB300929A0B /* GNBindings */,
+				EE5D0DAD19B8BAB300929A0B /* GNBindingsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE5D0DAC19B8BAB300929A0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5D0DBC19B8BAB300929A0B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE5D0D9A19B8BAB300929A0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5D0DA919B8BAB300929A0B /* GNBindings.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE5D0DAA19B8BAB300929A0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE5D0DBE19B8BAB300929A0B /* GNBindingsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE5D0DB519B8BAB300929A0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE5D0D9D19B8BAB300929A0B /* GNBindings */;
+			targetProxy = EE5D0DB419B8BAB300929A0B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE5D0DBA19B8BAB300929A0B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE5D0DBB19B8BAB300929A0B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE5D0DBF19B8BAB300929A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE5D0DC019B8BAB300929A0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE5D0DC219B8BAB300929A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GNBindings.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GNBindings/GNBindings-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EE5D0DC319B8BAB300929A0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GNBindings.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GNBindings/GNBindings-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		EE5D0DC519B8BAB300929A0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GNBindings/GNBindings-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GNBindingsTests/GNBindingsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EE5D0DC619B8BAB300929A0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GNBindings/GNBindings-Prefix.pch";
+				INFOPLIST_FILE = "GNBindingsTests/GNBindingsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE5D0D9919B8BAB300929A0B /* Build configuration list for PBXProject "GNBindings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5D0DBF19B8BAB300929A0B /* Debug */,
+				EE5D0DC019B8BAB300929A0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE5D0DC119B8BAB300929A0B /* Build configuration list for PBXNativeTarget "GNBindings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5D0DC219B8BAB300929A0B /* Debug */,
+				EE5D0DC319B8BAB300929A0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EE5D0DC419B8BAB300929A0B /* Build configuration list for PBXNativeTarget "GNBindingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE5D0DC519B8BAB300929A0B /* Debug */,
+				EE5D0DC619B8BAB300929A0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE5D0D9619B8BAB300929A0B /* Project object */;
+}

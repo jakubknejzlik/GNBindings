@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		EE5D0DA219B8BAB300929A0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D0DA119B8BAB300929A0B /* Foundation.framework */; };
-		EE5D0DA719B8BAB300929A0B /* GNBindings.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE5D0DA619B8BAB300929A0B /* GNBindings.h */; };
-		EE5D0DA919B8BAB300929A0B /* GNBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D0DA819B8BAB300929A0B /* GNBindings.m */; };
 		EE5D0DB019B8BAB300929A0B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D0DAF19B8BAB300929A0B /* XCTest.framework */; };
 		EE5D0DB119B8BAB300929A0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D0DA119B8BAB300929A0B /* Foundation.framework */; };
 		EE5D0DB319B8BAB300929A0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D0DB219B8BAB300929A0B /* UIKit.framework */; };
 		EE5D0DB619B8BAB300929A0B /* libGNBindings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE5D0D9E19B8BAB300929A0B /* libGNBindings.a */; };
 		EE5D0DBC19B8BAB300929A0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EE5D0DBA19B8BAB300929A0B /* InfoPlist.strings */; };
 		EE5D0DBE19B8BAB300929A0B /* GNBindingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D0DBD19B8BAB300929A0B /* GNBindingsTests.m */; };
+		EE5D0DCF19B8BABE00929A0B /* GNBindings.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D0DC819B8BABE00929A0B /* GNBindings.m */; };
+		EE5D0DD019B8BABE00929A0B /* GNBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D0DCA19B8BABE00929A0B /* GNBinding.m */; };
+		EE5D0DD119B8BABE00929A0B /* GNBindingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D0DCC19B8BABE00929A0B /* GNBindingObject.m */; };
+		EE5D0DD219B8BABE00929A0B /* NSObject+GNBindingsValue.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5D0DCE19B8BABE00929A0B /* NSObject+GNBindingsValue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +37,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				EE5D0DA719B8BAB300929A0B /* GNBindings.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +46,20 @@
 		EE5D0D9E19B8BAB300929A0B /* libGNBindings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGNBindings.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5D0DA119B8BAB300929A0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EE5D0DA519B8BAB300929A0B /* GNBindings-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNBindings-Prefix.pch"; sourceTree = "<group>"; };
-		EE5D0DA619B8BAB300929A0B /* GNBindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNBindings.h; sourceTree = "<group>"; };
-		EE5D0DA819B8BAB300929A0B /* GNBindings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNBindings.m; sourceTree = "<group>"; };
 		EE5D0DAE19B8BAB300929A0B /* GNBindingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GNBindingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5D0DAF19B8BAB300929A0B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		EE5D0DB219B8BAB300929A0B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EE5D0DB919B8BAB300929A0B /* GNBindingsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GNBindingsTests-Info.plist"; sourceTree = "<group>"; };
 		EE5D0DBB19B8BAB300929A0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EE5D0DBD19B8BAB300929A0B /* GNBindingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GNBindingsTests.m; sourceTree = "<group>"; };
+		EE5D0DC719B8BABE00929A0B /* GNBindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNBindings.h; sourceTree = "<group>"; };
+		EE5D0DC819B8BABE00929A0B /* GNBindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNBindings.m; sourceTree = "<group>"; };
+		EE5D0DC919B8BABE00929A0B /* GNBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNBinding.h; sourceTree = "<group>"; };
+		EE5D0DCA19B8BABE00929A0B /* GNBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNBinding.m; sourceTree = "<group>"; };
+		EE5D0DCB19B8BABE00929A0B /* GNBindingObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNBindingObject.h; sourceTree = "<group>"; };
+		EE5D0DCC19B8BABE00929A0B /* GNBindingObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNBindingObject.m; sourceTree = "<group>"; };
+		EE5D0DCD19B8BABE00929A0B /* NSObject+GNBindingsValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNBindingsValue.h"; sourceTree = "<group>"; };
+		EE5D0DCE19B8BABE00929A0B /* NSObject+GNBindingsValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNBindingsValue.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +117,14 @@
 		EE5D0DA319B8BAB300929A0B /* GNBindings */ = {
 			isa = PBXGroup;
 			children = (
-				EE5D0DA619B8BAB300929A0B /* GNBindings.h */,
-				EE5D0DA819B8BAB300929A0B /* GNBindings.m */,
+				EE5D0DC719B8BABE00929A0B /* GNBindings.h */,
+				EE5D0DC819B8BABE00929A0B /* GNBindings.m */,
+				EE5D0DC919B8BABE00929A0B /* GNBinding.h */,
+				EE5D0DCA19B8BABE00929A0B /* GNBinding.m */,
+				EE5D0DCB19B8BABE00929A0B /* GNBindingObject.h */,
+				EE5D0DCC19B8BABE00929A0B /* GNBindingObject.m */,
+				EE5D0DCD19B8BABE00929A0B /* NSObject+GNBindingsValue.h */,
+				EE5D0DCE19B8BABE00929A0B /* NSObject+GNBindingsValue.m */,
 				EE5D0DA419B8BAB300929A0B /* Supporting Files */,
 			);
 			path = GNBindings;
@@ -224,7 +237,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE5D0DA919B8BAB300929A0B /* GNBindings.m in Sources */,
+				EE5D0DD219B8BABE00929A0B /* NSObject+GNBindingsValue.m in Sources */,
+				EE5D0DD019B8BABE00929A0B /* GNBinding.m in Sources */,
+				EE5D0DCF19B8BABE00929A0B /* GNBindings.m in Sources */,
+				EE5D0DD119B8BABE00929A0B /* GNBindingObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

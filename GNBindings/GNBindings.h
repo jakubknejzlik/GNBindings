@@ -1,13 +1,23 @@
 //
-//  GNBindings.h
-//  GNBindings
+//  NSKBindings.h
+//  Aqualog
 //
-//  Created by Jakub Knejzlik on 04/09/14.
-//  Copyright (c) 2014 Jakub Knejzlik. All rights reserved.
+//  Created by Jakub Knejzlik on 13/12/13.
+//  Copyright (c) 2013 TheFuntasty. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "GNBinding.h"
 
 @interface GNBindings : NSObject
+@property (nonatomic,readonly) NSMutableSet *allBindings;
+
++(instancetype)bindings;
+
+-(GNBinding *)addBindingForKey:(NSString *)key ofObject:(NSObject *)object toBindingForKey:(NSString *)otherKey ofObject:(NSObject *)otherObject;
+
+-(void)removeBinding:(GNBinding *)binding;
+-(void)removeBindings:(NSArray *)bindings;
+-(void)removeAllBindings;
 
 @end

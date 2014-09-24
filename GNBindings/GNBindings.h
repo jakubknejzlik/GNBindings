@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "GNBinding.h"
+#import "NSObject+GNBindingsValue.h"
 
 @interface GNBindings : NSObject
 @property (nonatomic,readonly) NSMutableSet *allBindings;
@@ -24,5 +26,6 @@
 
 
 @interface GNBindings (ObjectGetters)
--(NSArray *)bindingsForObject:(id)object;
+-(void)removeBindingsForObject:(id)object;
+-(void)removeBindingsForObject:(id)object key:(NSString *)key;
 @end

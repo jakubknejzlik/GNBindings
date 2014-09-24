@@ -9,6 +9,7 @@
 #import "GNBindings.h"
 #import "GNBinding.h"
 
+
 @interface GNBindings ()
 @end
 
@@ -53,14 +54,18 @@
 
 @implementation GNBindings (ObjectGetters)
 
--(NSArray *)bindingsForObject:(id)object{
-    NSMutableArray *array = [NSMutableArray array];
+-(void)removeBindingsForObject:(id)object{
+    [self removeBindingsForObject:object key:nil];
+}
+-(void)removeBindingsForObject:(id)object key:(NSString *)key{
     for (GNBinding *binding in self.allBindings) {
-        if ([binding.bindingObjects containsObject:binding]) {
-            [array addObject:binding];
-        }
+        [binding unbindObject:object forKey:key];
+//        for (GNBindingObject *bo in binding.bindingObjects) {
+//            if (bo.object == object) {
+//                [binding unbindObject:object forKey:key];
+//            }
+//        }
     }
-    return [NSArray arrayWithArray:array];
 }
 
 @end

@@ -38,9 +38,12 @@
     [self._bindingObjects addObject:bindingObject];
     [bindingObject bind];
 }
+-(void)unbindObject:(id)object{
+    [self unbindObject:object forKey:nil];
+}
 -(void)unbindObject:(id)object forKey:(NSString *)key{
     for (GNBindingObject *bindingObject in [self.bindingObjects copy]) {
-        if(bindingObject.object == object && [bindingObject.key isEqualToString:key]){
+        if(bindingObject.object == object && ([bindingObject.key isEqualToString:key] || !key)){
             [self._bindingObjects removeObject:bindingObject];
             [bindingObject unbind];
         }

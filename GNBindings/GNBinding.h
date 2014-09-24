@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "GNBindingObject.h"
+
 @class GNBindings;
 @interface GNBinding : NSObject
 @property (nonatomic,readonly) NSArray *bindingObjects;
@@ -16,6 +18,7 @@
 -(id)initWithObjects:(NSArray *)objects andKeys:(NSArray *)keys;
 
 -(void)bindObject:(id)object forKey:(NSString *)key;
+-(void)unbindObject:(id)object;
 -(void)unbindObject:(id)object forKey:(NSString *)key;
 
 -(void)unbindAllObjects;

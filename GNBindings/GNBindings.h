@@ -23,6 +23,6 @@
 @end
 
 
-@interface GNBinding (ObjectGetters)
+@interface GNBindings (ObjectGetters)
 -(NSArray *)bindingsForObject:(id)object;
 @end

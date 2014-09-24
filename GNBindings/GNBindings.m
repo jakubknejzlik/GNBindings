@@ -49,3 +49,18 @@
 }
 
 @end
+
+
+@implementation GNBindings (ObjectGetters)
+
+-(NSArray *)bindingsForObject:(id)object{
+    NSMutableArray *array = [NSMutableArray array];
+    for (GNBinding *binding in self.allBindings) {
+        if ([binding.bindingObjects containsObject:binding]) {
+            [array addObject:binding];
+        }
+    }
+    return [NSArray arrayWithArray:array];
+}
+
+@end

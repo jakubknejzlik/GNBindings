@@ -21,3 +21,8 @@
 -(void)removeAllBindings;
 
 @end
+
+
+@interface GNBinding (ObjectGetters)
+-(NSArray *)bindingsForObject:(id)object;
+@end

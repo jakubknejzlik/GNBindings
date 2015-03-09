@@ -67,6 +67,18 @@
 }
 @end
 
+@implementation NSMutableDictionary (GNBindingObject)
+
+-(void)gn_setValue:(id)value forKey:(NSString *)key{
+    if (!value) {
+        [self removeObjectForKey:key];
+    }else{
+        [super gn_setValue:value forKey:key];
+    }
+}
+
+@end
+
 
 @implementation UITextField (GNBindingObject)
 -(void)gn_bind:(GNBindingObject *)bindingObject{
@@ -81,6 +93,23 @@
 }
 -(id)gn_valueForKey:(NSString *)key{
     return self.text;
+}
+
+@end
+
+@implementation UIImageView (GNBindingObject)
+
+-(void)gn_setValue:(id)value forKey:(NSString *)key{
+    if([key isEqualToString:@"image"]){
+        self.image = value;
+        return;
+    }
+    [super gn_setValue:value forKey:key];
+}
+-(id)gn_valueForKey:(NSString *)key{
+    if ([key isEqualToString:@"image"])
+        return self.image;
+    return [super gn_valueForKey:key];
 }
 
 @end

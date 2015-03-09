@@ -10,6 +10,9 @@
 
 
 @implementation NSObject (GNBindingsValue)
+
+-(void)gn_setFriendlyValue:(id)value{}
+
 +(BOOL)gn_friendlyValue:(id)value isEqual:(id)otherValue{
     return value == otherValue || [value gn_isEqualToFriendlyValue:otherValue];
 }
@@ -32,6 +35,7 @@
 
 
 @implementation NSString (GNBindingsValue)
+
 -(BOOL)gn_isEqualToFriendlyValue:(id)value{
     if([value isKindOfClass:[NSString class]] && [self isEqualToString:value]){
         return YES;

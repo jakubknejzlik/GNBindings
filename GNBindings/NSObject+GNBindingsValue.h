@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface NSObject (GNBindingsValue)
+
 +(BOOL)gn_friendlyValue:(id)value isEqual:(id)otherValue;
 -(BOOL)gn_isEqualToFriendlyValue:(id)value;
 -(NSString *)gn_stringValue;

@@ -43,6 +43,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EE57DD621AADFF92002E0E13 /* GNBindings.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = GNBindings.podspec; sourceTree = "<group>"; };
 		EE5D0D9E19B8BAB300929A0B /* libGNBindings.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGNBindings.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5D0DA119B8BAB300929A0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EE5D0DA519B8BAB300929A0B /* GNBindings-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GNBindings-Prefix.pch"; sourceTree = "<group>"; };
@@ -88,6 +89,7 @@
 		EE5D0D9519B8BAB300929A0B = {
 			isa = PBXGroup;
 			children = (
+				EE57DD621AADFF92002E0E13 /* GNBindings.podspec */,
 				EE5D0DA319B8BAB300929A0B /* GNBindings */,
 				EE5D0DB719B8BAB300929A0B /* GNBindingsTests */,
 				EE5D0DA019B8BAB300929A0B /* Frameworks */,
@@ -421,6 +423,7 @@
 				EE5D0DC319B8BAB300929A0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE5D0DC419B8BAB300929A0B /* Build configuration list for PBXNativeTarget "GNBindingsTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +432,7 @@
 				EE5D0DC619B8BAB300929A0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
